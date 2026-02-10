@@ -85,6 +85,8 @@ export const translations = {
     adminPinPlaceholder: "DIGITE O PIN",
     adminCancel: "CANCELAR",
     adminLicenseKey: "CHAVE DE LICENÇA",
+    adminColorPicker: "PAINEL DE CROMATOGRAFIA DE ELITE",
+    adminFixColor: "FIXAR COR",
     trialMode: "TEMPO DE DEMONSTRAÇÃO",
     trialExpired: "Acesso de Demonstração Concluído. Solicite a Licença Vitalícia.",
     legalTerm: "Concordo que esta interface é uma ferramenta facilitadora de envio. Reconheço que a Marketelli não possui vínculo governamental e não armazena meus dados.",

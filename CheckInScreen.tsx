@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Lock, Save, X, Palette } from 'lucide-react';
 import { translations, Language } from './translations';
 import { useHotel } from './HotelContext';
 import { SettingsModal } from './SettingsOverlay';
+import { hotelConfig } from './hotel_config';
 
 // --- Types & Interfaces ---
 interface FormData {
@@ -32,7 +34,22 @@ interface FormData {
 const ALPHA_GOLD = 'var(--primary-accent)';
 
 const CheckInScreen: React.FC = () => {
-  const { currentHotel, isLoading, updateHotelConfig } = useHotel();
+  const { slug } = useParams<{ slug: string }>();
+  const { currentHotel: contextHotel, isLoading: contextLoading, updateHotelConfig, loadHotel } = useHotel();
+  
+  // Logic to select the hotel data from hotel_config.ts
+  const currentHotel = hotelConfig[slug || 'default'] || hotelConfig['default'];
+
+  // Sync with context if needed, but for now we rely on the static config for initial render
+  // Ideally, we should update the context so other components (like SettingsOverlay) are in sync
+  useEffect(() => {
+    if (slug) {
+      loadHotel(slug);
+    }
+  }, [slug, loadHotel]);
+
+  const isLoading = false; // Override loading since we have static config immediately
+
   const [showSettings, setShowSettings] = useState(false);
   const [showColorPicker, setShowColorPicker] = useState(false);
   const [tempColor, setTempColor] = useState('#10B981'); // Default to Emerald (Pillar 1)

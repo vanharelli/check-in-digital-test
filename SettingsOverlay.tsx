@@ -137,6 +137,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, c
                   <label className="block text-xs text-[var(--primary-accent)] uppercase mb-1">{t.adminWhatsapp}</label>
                   <input 
                     name="whatsapp"
+                    placeholder="ex: +1234567890"
                     value={formData.whatsapp}
                     onChange={handleChange}
                     className="w-full bg-black border border-white/20 rounded p-3 text-white focus:border-[var(--primary-accent)] outline-none"

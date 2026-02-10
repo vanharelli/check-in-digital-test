@@ -46,6 +46,13 @@ export const HotelProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       try {
         const hotel = await getHotelFromDB(id);
         if (hotel) {
+          // Migration: Auto-correct old Green theme to Gold Standard
+          if (hotel.primaryColor === '#10B981' || !hotel.primaryColor) {
+            hotel.primaryColor = '#D4AF37';
+            hotel.themeColor = '#D4AF37';
+            saveHotelToDB(hotel);
+          }
+
           // Backfill createdAt for existing hotels to start trial tracking
           if (!hotel.createdAt) {
             hotel.createdAt = new Date().toISOString();

@@ -89,8 +89,8 @@ export const translations = {
     adminFixColor: "FIXAR COR",
     trialMode: "TEMPO DE DEMONSTRAÇÃO",
     trialExpired: "Acesso de Demonstração Concluído. Solicite a Licença Vitalícia.",
-    legalTerm: "Concordo que esta interface é uma ferramenta facilitadora de envio. Reconheço que a Marketelli não possui vínculo governamental e não armazena meus dados.",
-    footerStateless: "Tecnologia Stateless (Sem Armazenamento). A responsabilidade pelo envio à FNRH (Lei 11.771/2008) é exclusiva do Estabelecimento. Suporte: atendimento@marketelli.com"
+    legalTerm: "Estou ciente de que esta ferramenta serve apenas para facilitar o check-in. Reconheço que a CHECK-IN DIGITAL não possui vínculo governamental e que meus dados NÃO ficam salvos no sistema.",
+    footerStateless: "Tecnologia Stateless (Sem Armazenamento). A responsabilidade pelo envio à FNRH (Lei 11.771/2008) é exclusiva do Estabelecimento.\n\nSuporte: atendimento@marketelli.com",
   },
   EN: {
     title: "Digital Identification Protocol",
@@ -180,7 +180,7 @@ export const translations = {
     adminFixColor: "FIX COLOR",
     trialMode: "TECHNOLOGICAL TASTING MODE",
     trialExpired: "Demo Access Completed. Request Lifetime License.",
-    legalTerm: "I agree that this interface is a sending tool. I acknowledge that Marketelli has no government affiliation and does not store my data.",
+    legalTerm: "I am aware that this tool serves only to facilitate check-in. I acknowledge that CHECK-IN DIGITAL has no government affiliation and that my data is NOT saved in the system.",
     footerStateless: "Stateless Technology (No Storage). Responsibility for FNRH submission lies exclusively with the Establishment. Support: atendimento@marketelli.com"
   },
   ES: {
@@ -271,7 +271,7 @@ export const translations = {
     adminFixColor: "FIJAR COLOR",
     trialMode: "MODO DE DEGUSTACIÓN TECNOLÓGICA",
     trialExpired: "Acceso de Demostración Completado. Solicite Licencia Vitalicia.",
-    legalTerm: "Acepto que esta interfaz es una herramienta de envío. Reconozco que Marketelli no tiene afiliación gubernamental y no almacena mis datos.",
+    legalTerm: "Estoy consciente de que esta herramienta sirve solo para facilitar el check-in. Reconozco que CHECK-IN DIGITAL no tiene vínculo gubernamental y que mis datos NO se guardan en el sistema.",
     footerStateless: "Tecnología Stateless (Sin Almacenamiento). La responsabilidad del envío a FNRH es exclusiva del Establecimiento. Soporte: atendimento@marketelli.com"
   }
 };

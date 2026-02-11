@@ -74,6 +74,7 @@ export const translations = {
     adminHotelId: "IDENTIFICADOR (SLUG URL)",
     adminDisplayTitle: "TÍTULO DE EXIBIÇÃO",
     adminSubtitle: "SUBTÍTULO",
+    adminBackgroundUrl: "URL DO BACKGROUND",
     adminLogoUrl: "URL DA LOGO",
     adminWhatsapp: "WHATSAPP DE DESTINO",
     adminFooterText: "TEXTO DO RODAPÉ",
@@ -90,7 +91,7 @@ export const translations = {
     trialMode: "TEMPO DE DEMONSTRAÇÃO",
     trialExpired: "Acesso de Demonstração Concluído. Solicite a Licença Vitalícia.",
     legalTerm: "Estou ciente de que esta ferramenta serve apenas para facilitar o check-in. Reconheço que a CHECK-IN DIGITAL não possui vínculo governamental e que meus dados NÃO ficam salvos no sistema.",
-    footerStateless: "Tecnologia Stateless (Sem Armazenamento). A responsabilidade pelo envio à FNRH (Lei 11.771/2008) é exclusiva do Estabelecimento.\n\nSuporte: atendimento@marketelli.com",
+    footerStateless: "FERRAMENTA EXCLUSIVA PARA GESTÃO DE CHECK-IN HOTELEIRO\n\nTecnologia Stateless & Zero-Knowledge. A responsabilidade pelo envio à FNRH (Lei 11.771/2008) compete administrativa e unicamente ao Estabelecimento.\n\nPOWERED BY MARKETELLI INTELLIGENCE",
   },
   EN: {
     title: "Digital Identification Protocol",
@@ -121,7 +122,7 @@ export const translations = {
     phone: "Phone / WhatsApp",
     roomNumber: "Room Number",
     roomNumberPlaceholder: "No. (OPTIONAL)",
-    hasVehicle: "Private Parking Logistics",
+    hasVehicle: "Will you use the garage?",
     vehicleModel: "Vehicle Model",
     vehicleModelPlaceholder: "MODEL",
     vehicleColor: "Color",
@@ -130,7 +131,7 @@ export const translations = {
     vehicleExitTimePlaceholder: "Ex: 08:00 AM",
     vehiclePlate: "License Plate",
     vehiclePlatePlaceholder: "PLATE (OPTIONAL)",
-    submitButton: "VALIDATE ACCESS PROTOCOL",
+    submitButton: "CHECK IN",
 
     // Validation Errors
     errorFullName: "Full name is required",
@@ -165,6 +166,7 @@ export const translations = {
     adminHotelId: "HOTEL IDENTIFIER",
     adminDisplayTitle: "DISPLAY TITLE",
     adminSubtitle: "SUBTITLE",
+    adminBackgroundUrl: "BACKGROUND URL",
     adminLogoUrl: "LOGO URL",
     adminWhatsapp: "DESTINATION WHATSAPP",
     adminFooterText: "FOOTER TEXT",
@@ -181,7 +183,7 @@ export const translations = {
     trialMode: "TECHNOLOGICAL TASTING MODE",
     trialExpired: "Demo Access Completed. Request Lifetime License.",
     legalTerm: "I am aware that this tool serves only to facilitate check-in. I acknowledge that CHECK-IN DIGITAL has no government affiliation and that my data is NOT saved in the system.",
-    footerStateless: "Stateless Technology (No Storage). Responsibility for FNRH submission lies exclusively with the Establishment. Support: atendimento@marketelli.com"
+    footerStateless: "EXCLUSIVE TOOL FOR HOTEL CHECK-IN MANAGEMENT\n\nStateless & Zero-Knowledge Technology. The responsibility for FNRH submission (Law 11.771/2008) lies administratively and solely with the Establishment.\n\nPOWERED BY MARKETELLI INTELLIGENCE"
   },
   ES: {
     title: "Protocolo de Identificación Digital",
@@ -212,7 +214,7 @@ export const translations = {
     phone: "Teléfono / WhatsApp",
     roomNumber: "Número de Habitación",
     roomNumberPlaceholder: "Nº (OPCIONAL)",
-    hasVehicle: "Logística de Estacionamiento Privado",
+    hasVehicle: "¿Usará el estacionamiento?",
     vehicleModel: "Modelo del Vehículo",
     vehicleModelPlaceholder: "MODELO",
     vehicleColor: "Color",
@@ -221,7 +223,7 @@ export const translations = {
     vehicleExitTimePlaceholder: "Ej: 08:00",
     vehiclePlate: "Placa / Patente",
     vehiclePlatePlaceholder: "PLACA (OPCIONAL)",
-    submitButton: "VALIDAR PROTOCOLO DE ACCESO",
+    submitButton: "REALIZAR CHECK-IN",
 
     // Validation Errors
     errorFullName: "Nombre completo es obligatorio",
@@ -256,6 +258,7 @@ export const translations = {
     adminHotelId: "IDENTIFICADOR DEL HOTEL",
     adminDisplayTitle: "TÍTULO VISIBLE",
     adminSubtitle: "SUBTÍTULO",
+    adminBackgroundUrl: "URL DEL FONDO",
     adminLogoUrl: "URL DEL LOGO",
     adminWhatsapp: "WHATSAPP DE DESTINO",
     adminFooterText: "TEXTO DEL PIE DE PÁGINA",
@@ -272,6 +275,6 @@ export const translations = {
     trialMode: "MODO DE DEGUSTACIÓN TECNOLÓGICA",
     trialExpired: "Acceso de Demostración Completado. Solicite Licencia Vitalicia.",
     legalTerm: "Estoy consciente de que esta herramienta sirve solo para facilitar el check-in. Reconozco que CHECK-IN DIGITAL no tiene vínculo gubernamental y que mis datos NO se guardan en el sistema.",
-    footerStateless: "Tecnología Stateless (Sin Almacenamiento). La responsabilidad del envío a FNRH es exclusiva del Establecimiento. Soporte: atendimento@marketelli.com"
+    footerStateless: "HERRAMIENTA EXCLUSIVA PARA LA GESTIÓN DE CHECK-IN HOTELERO\n\nTecnología Stateless & Zero-Knowledge. La responsabilidad del envío a la FNRH (Ley 11.771/2008) compete administrativa y únicamente al Establecimiento.\n\nPOWERED BY MARKETELLI INTELLIGENCE"
   }
 };

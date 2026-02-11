@@ -11,6 +11,7 @@ export interface HotelConfig {
   footerText?: string;
   licenseKey?: string;
   createdAt?: string;
+  backgroundUrl?: string;
 }
 
 export const DEFAULT_HOTEL: HotelConfig = {
@@ -22,5 +23,6 @@ export const DEFAULT_HOTEL: HotelConfig = {
   primaryColor: '#D4AF37', // Gold (Standard)
   enableMultiLanguage: true,
   enableGarage: true,
-  footerText: '© 2026 Alpha Plaza Hotel - Todos os direitos reservados'
+  footerText: '© 2026 Alpha Plaza Hotel - Todos os direitos reservados',
+  backgroundUrl: 'https://static.vecteezy.com/ti/vetor-gratis/t2/8953048-abstract-elegant-gold-lines-diagonal-scene-on-black-background-template-premium-award-design-gratis-vetor.jpg'
 };

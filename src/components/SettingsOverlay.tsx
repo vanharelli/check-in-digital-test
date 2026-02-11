@@ -156,6 +156,17 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, c
                 </div>
 
                 <div>
+                  <label className="block text-xs text-[var(--primary-accent)] uppercase mb-1">{t.adminBackgroundUrl}</label>
+                  <input 
+                    name="backgroundUrl"
+                    value={formData.backgroundUrl || ''}
+                    onChange={handleChange}
+                    placeholder="https://..."
+                    className="w-full bg-black border border-white/20 rounded p-3 text-white focus:border-[var(--primary-accent)] outline-none text-xs font-mono"
+                  />
+                </div>
+
+                <div>
                   <label className="block text-xs text-[var(--primary-accent)] uppercase mb-1">{t.adminFooterText}</label>
                   <textarea 
                     name="footerText"

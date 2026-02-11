@@ -425,8 +425,13 @@ const CheckInScreen: React.FC = () => {
     );
   }
 
+  const bgUrl = currentHotel.backgroundUrl || 'https://static.vecteezy.com/ti/vetor-gratis/t2/8953048-abstract-elegant-gold-lines-diagonal-scene-on-black-background-template-premium-award-design-gratis-vetor.jpg';
+
   return (
-    <div className="min-h-[100dvh] w-full bg-[#050505] bg-[url('https://static.vecteezy.com/ti/vetor-gratis/t2/8953048-abstract-elegant-gold-lines-diagonal-scene-on-black-background-template-premium-award-design-gratis-vetor.jpg')] bg-cover bg-center bg-no-repeat bg-fixed flex flex-col items-center justify-center px-4 py-8 pb-[safe-area-inset-bottom] font-sans selection:bg-[var(--primary-accent)] selection:text-black relative">
+    <div 
+      className="min-h-[100dvh] w-full bg-[#050505] bg-cover bg-center bg-no-repeat bg-fixed flex flex-col items-center justify-center px-4 py-8 pb-[safe-area-inset-bottom] font-sans selection:bg-[var(--primary-accent)] selection:text-black relative transition-all duration-500"
+      style={{ backgroundImage: `url('${bgUrl}')` }}
+    >
       <div className="absolute inset-0 bg-black/40 backdrop-blur-[10px]" /> {/* Overlay for better text readability */}
       <SettingsModal isOpen={showSettings} onClose={() => setShowSettings(false)} currentLanguage={language} />
 
@@ -537,11 +542,31 @@ const CheckInScreen: React.FC = () => {
               <button
                 key={lang}
                 onClick={() => handleLanguageChange(lang)}
-                className={`text-[10px] font-bold tracking-widest transition-colors duration-300 ${
-                  language === lang ? 'text-[var(--primary-accent)] border-b border-[var(--primary-accent)]' : 'text-white/40 hover:text-white'
+                className={`text-2xl transition-all duration-300 ${
+                  language === lang ? 'opacity-100 scale-110' : 'opacity-30 hover:opacity-100 hover:scale-105'
                 }`}
+                title={lang}
               >
-                {lang}
+                {lang === 'PT' && (
+                  <svg viewBox="0 0 72 50" width="24" height="16" className="rounded-sm shadow-sm">
+                    <rect width="72" height="50" fill="#009c3b"/>
+                    <path d="M36,11 L64,25 L36,39 L8,25 Z" fill="#ffdf00"/>
+                    <circle cx="36" cy="25" r="9" fill="#002776"/>
+                  </svg>
+                )}
+                {lang === 'EN' && (
+                  <svg viewBox="0 0 72 50" width="24" height="16" className="rounded-sm shadow-sm">
+                    <rect width="72" height="50" fill="#b22234"/>
+                    <path d="M0,7.7 H72 M0,15.4 H72 M0,23.1 H72 M0,30.8 H72 M0,38.5 H72 M0,46.2 H72" stroke="#fff" strokeWidth="3.8"/>
+                    <rect width="28.8" height="27" fill="#3c3b6e"/>
+                  </svg>
+                )}
+                {lang === 'ES' && (
+                  <svg viewBox="0 0 72 50" width="24" height="16" className="rounded-sm shadow-sm">
+                    <rect width="72" height="50" fill="#AA151B"/>
+                    <rect y="12.5" width="72" height="25" fill="#F1BF00"/>
+                  </svg>
+                )}
               </button>
             ))}
           </div>
@@ -980,7 +1005,7 @@ const CheckInScreen: React.FC = () => {
             {currentHotel.footerText}
           </p>
         )}
-        <p className="text-[var(--primary-accent)]/40 text-[9px] uppercase tracking-widest font-light">
+        <p className="text-[var(--primary-accent)]/40 text-[9px] uppercase tracking-widest font-light whitespace-pre-line leading-relaxed max-w-2xl mx-auto">
           {t.footerStateless}
         </p>
       </div>

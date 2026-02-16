@@ -123,8 +123,8 @@ export const CheckInScreen: React.FC = () => {
             return;
         }
 
-        const payload = generateWhatsAppPayload(formData);
-        const whatsappUrl = `https://wa.me/${DEFAULT_HOTEL.whatsapp}?text=${encodeURIComponent(payload)}`;
+        const message = generateWhatsAppPayload(formData);
+        const whatsappUrl = `https://wa.me/${DEFAULT_HOTEL.whatsapp}?text=${encodeURIComponent(message)}`;
 
         window.open(whatsappUrl, '_blank');
 

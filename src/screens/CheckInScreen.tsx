@@ -172,7 +172,7 @@ export const CheckInScreen: React.FC = () => {
     };
 
     const inputClasses =
-        "w-full p-3 bg-transparent border border-white/10 rounded-xl text-white placeholder-white " +
+        "w-full p-3 bg-transparent border border-[#8B5CF6]/60 rounded-xl text-white placeholder-white " +
         "focus:ring-2 focus:ring-[#8B5CF6]/70 focus:border-[#8B5CF6] outline-none transition-all uppercase " +
         "backdrop-blur-xl shadow-[0_0_18px_rgba(0,0,0,0.8)]";
     const labelClasses =
@@ -336,16 +336,29 @@ export const CheckInScreen: React.FC = () => {
                                 </div>
                             </div>
                         ) : (
-                            <div>
-                                <label className={labelClasses}>{t.cpf}</label>
-                                <IMaskInput
-                                    mask="000.000.000-00"
-                                    name="cpf"
-                                    value={formData.cpf}
-                                    onChange={handleChange}
-                                    placeholder={t.cpf}
-                                    className={inputClasses}
-                                />
+                            <div className="space-y-4">
+                                <div>
+                                    <label className={labelClasses}>{t.cpf}</label>
+                                    <IMaskInput
+                                        mask="000.000.000-00"
+                                        name="cpf"
+                                        value={formData.cpf}
+                                        onChange={handleChange}
+                                        placeholder={t.cpf}
+                                        className={inputClasses}
+                                    />
+                                </div>
+                                <div>
+                                    <label className={labelClasses}>{t.birthDate}</label>
+                                    <IMaskInput
+                                        mask="00/00/0000"
+                                        name="birthDate"
+                                        value={formData.birthDate}
+                                        onChange={handleChange}
+                                        placeholder={t.birthDatePlaceholder}
+                                        className={inputClasses}
+                                    />
+                                </div>
                             </div>
                         )}
                     </div>

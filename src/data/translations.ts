@@ -28,7 +28,7 @@ export const translations = {
     email: "E-mail",
     emailPlaceholder: "SEU MELHOR E-MAIL",
     phone: "WhatsApp",
-    roomNumber: "Número do Quarto",
+    roomNumber: "Nº do Quarto",
     roomNumberPlaceholder: "Nº (OPCIONAL)",
     hasVehicle: "Vai usar a garagem?",
     vehicleModel: "Modelo do Veículo",

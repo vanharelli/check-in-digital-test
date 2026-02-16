@@ -101,6 +101,17 @@ export const CheckInScreen: React.FC = () => {
         setFormData(prev => ({ ...prev, [name]: value }));
     };
 
+    const handleMaskedChange = (name: string) => (value: string) => {
+        if (name === 'zipCode') {
+            const cleanZip = value.replace(/\D/g, '');
+            if (cleanZip.length === 8) {
+                handleFetchAddress(cleanZip);
+            }
+        }
+
+        setFormData(prev => ({ ...prev, [name]: value }));
+    };
+
     const handleFetchAddress = async (cep: string) => {
         setLoadingAddress(true);
         const address = await fetchAddress(cep);
@@ -339,14 +350,14 @@ export const CheckInScreen: React.FC = () => {
                             <div className="space-y-4">
                                 <div>
                                     <label className={labelClasses}>{t.cpf}</label>
-                                    <IMaskInput
-                                        mask="000.000.000-00"
-                                        name="cpf"
-                                        value={formData.cpf}
-                                        onChange={handleChange}
-                                        placeholder={t.cpf}
-                                        className={inputClasses}
-                                    />
+                                <IMaskInput
+                                    mask="000.000.000-00"
+                                    name="cpf"
+                                    value={formData.cpf}
+                                    onAccept={handleMaskedChange('cpf')}
+                                    placeholder={t.cpf}
+                                    className={inputClasses}
+                                />
                                 </div>
                                 <div>
                                     <label className={labelClasses}>{t.birthDate}</label>
@@ -354,7 +365,7 @@ export const CheckInScreen: React.FC = () => {
                                         mask="00/00/0000"
                                         name="birthDate"
                                         value={formData.birthDate}
-                                        onChange={handleChange}
+                                        onAccept={handleMaskedChange('birthDate')}
                                         placeholder={t.birthDatePlaceholder}
                                         className={inputClasses}
                                     />
@@ -380,7 +391,7 @@ export const CheckInScreen: React.FC = () => {
                                 mask="00000-000"
                                 name="zipCode"
                                 value={formData.zipCode}
-                                onChange={handleChange}
+                                onAccept={handleMaskedChange('zipCode')}
                                 placeholder="00000-000"
                                 className={`${inputClasses} ${loadingAddress ? 'animate-pulse bg-white/10' : ''}`}
                             />
@@ -440,7 +451,7 @@ export const CheckInScreen: React.FC = () => {
                                 mask="(00) 00000-0000"
                                 name="phone"
                                 value={formData.phone}
-                                onChange={handleChange}
+                                onAccept={handleMaskedChange('phone')}
                                 placeholder="(00) 00000-0000"
                                 className={inputClasses}
                             />

@@ -40,10 +40,5 @@ export const generateWhatsAppPayload = (formData: any) => {
         lines.push('🚫 NÃO VAI USAR!');
     }
 
-    lines.push('');
-    lines.push('---');
-    lines.push('⚡ *SISTEMA OPERACIONAL MARKETELLI*');
-    lines.push('🛡 *PROTOCOLO STATELESS | 14 ANOS DE EXPERIÊNCIA*');
-
     return lines.join('\n');
 };

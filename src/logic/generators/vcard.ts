@@ -28,7 +28,7 @@ export const generateWhatsAppPayload = (formData: any) => {
     }
 
     lines.push('');
-    lines.push('*LOGÍSTICA DE VEÍCULO*');
+    lines.push('*VAI USAR A GARAGEM?*');
 
     if (formData.hasVehicle) {
         lines.push(`🚗 *MODELO:* ${formData.vehicleModel.toUpperCase()} (${formData.vehicleColor.toUpperCase()})`);
@@ -37,7 +37,7 @@ export const generateWhatsAppPayload = (formData: any) => {
             lines.push(`⏱ *SAÍDA:* ${formData.vehicleExitTime}`);
         }
     } else {
-        lines.push('🚫 *VEÍCULO:* NÃO POSSUI');
+        lines.push('🚫 NÃO VAI USAR!');
     }
 
     lines.push('');

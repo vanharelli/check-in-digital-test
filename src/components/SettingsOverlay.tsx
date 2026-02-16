@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useHotel } from '../context/HotelContext';
-import { X, Save, Settings, Lock, Globe } from 'lucide-react';
+import { X, Settings, Lock, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { translations, Language } from '../data/translations';
+import { translations } from '../data/translations';
+import type { Language } from '../data/translations';
 
 interface SettingsModalProps {
   isOpen: boolean;
@@ -10,12 +11,16 @@ interface SettingsModalProps {
   currentLanguage: Language;
 }
 
-export const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose, currentLanguage }) => {
+export const SettingsModal: React.FC<SettingsModalProps> = ({
+  isOpen,
+  onClose,
+  currentLanguage,
+}: SettingsModalProps) => {
   const { currentHotel, updateHotelConfig } = useHotel();
   const [formData, setFormData] = useState(currentHotel);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pin, setPin] = useState('');
-  const [error, setError] = useState('');
+  const [, setError] = useState('');
   
   const t = translations[currentLanguage];
 

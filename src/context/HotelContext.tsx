@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useCallback } from 'react';
-import { HotelConfig, DEFAULT_HOTEL } from '../types/types';
+import type { HotelConfig } from '../types/types';
+import { DEFAULT_HOTEL } from '../types/types';
 
 interface HotelContextType {
   currentHotel: HotelConfig;

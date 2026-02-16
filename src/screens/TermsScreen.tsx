@@ -19,13 +19,13 @@ export const TermsScreen: React.FC = () => {
     return (
         <div className="min-h-[100dvh] flex flex-col bg-transparent pt-[env(safe-area-inset-top,1rem)] pb-[env(safe-area-inset-bottom,1rem)]">
             <div className="flex-1 p-6 max-w-3xl mx-auto w-full relative z-10">
-                <div className="bg-black/80 backdrop-blur-xl rounded-2xl p-8 border border-orange-500 shadow-[0_0_40px_rgba(0,0,0,0.9)]">
+                <div className="bg-black/80 backdrop-blur-xl rounded-2xl p-8 border border-[#8B5CF6] shadow-[0_0_40px_rgba(0,0,0,0.9)]">
                     <div className="mb-6">
                         <button 
                             onClick={handleBack}
-                            className="flex items-center gap-2 text-orange-400 hover:text-orange-300 transition-colors group"
+                            className="flex items-center gap-2 text-[#8B5CF6] hover:text-[#A855F7] transition-colors group"
                         >
-                            <div className="p-2 rounded-full bg-white/5 group-hover:bg-orange-500/10 transition-colors">
+                            <div className="p-2 rounded-full bg-white/5 group-hover:bg-[#8B5CF6]/10 transition-colors">
                                 <ArrowLeft size={20} />
                             </div>
                             <span className="font-medium text-sm tracking-wide">VOLTAR</span>
@@ -51,7 +51,7 @@ export const TermsScreen: React.FC = () => {
 
                     <div className="space-y-8 text-gray-300">
                         <section>
-                            <h3 className="font-bold text-orange-500 mb-3 text-sm uppercase tracking-wide">
+                            <h3 className="font-bold text-[#8B5CF6] mb-3 text-sm uppercase tracking-wide">
                                 {language === 'PT' && '1. Natureza do Serviço'}
                                 {language === 'EN' && '1. Nature of the Service'}
                                 {language === 'ES' && '1. Naturaleza del Servicio'}
@@ -67,7 +67,7 @@ export const TermsScreen: React.FC = () => {
                         </section>
 
                         <section>
-                            <h3 className="font-bold text-orange-500 mb-3 text-sm uppercase tracking-wide">
+                            <h3 className="font-bold text-[#8B5CF6] mb-3 text-sm uppercase tracking-wide">
                                 {language === 'PT' && '2. Responsabilidade Legal (FNRH)'}
                                 {language === 'EN' && '2. Legal Responsibility (FNRH)'}
                                 {language === 'ES' && '2. Responsabilidad Legal (FNRH)'}
@@ -83,7 +83,7 @@ export const TermsScreen: React.FC = () => {
                         </section>
 
                         <section>
-                            <h3 className="font-bold text-orange-500 mb-3 text-sm uppercase tracking-wide">
+                            <h3 className="font-bold text-[#8B5CF6] mb-3 text-sm uppercase tracking-wide">
                                 {language === 'PT' && '3. Tratamento de Dados (LGPD)'}
                                 {language === 'EN' && '3. Data Processing (LGPD)'}
                                 {language === 'ES' && '3. Tratamiento de Datos (LGPD)'}
@@ -99,7 +99,7 @@ export const TermsScreen: React.FC = () => {
                         </section>
 
                         <section>
-                            <h3 className="font-bold text-orange-500 mb-3 text-sm uppercase tracking-wide">
+                            <h3 className="font-bold text-[#8B5CF6] mb-3 text-sm uppercase tracking-wide">
                                 {language === 'PT' && '4. Disposições Gerais'}
                                 {language === 'EN' && '4. General Provisions'}
                                 {language === 'ES' && '4. Disposiciones Generales'}
@@ -115,7 +115,7 @@ export const TermsScreen: React.FC = () => {
                         </section>
                     </div>
 
-                    <div className="mt-12 pt-8 border-t border-orange-500/70 text-center">
+                    <div className="mt-12 pt-8 border-t border-[#8B5CF6]/70 text-center">
                         <p className="text-[10px] text-gray-600 uppercase tracking-widest">
                             Atualizado em: Fevereiro de 2026<br/>
                             Marketelli Software Solutions

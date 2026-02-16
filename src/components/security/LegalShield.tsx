@@ -14,7 +14,7 @@ export const LegalShield: React.FC<LegalShieldProps> = ({ isChecked, onChange })
                     id="legal-check"
                     checked={isChecked}
                     onChange={(e) => onChange(e.target.checked)}
-                    className="peer w-5 h-5 appearance-none rounded border border-white/40 bg-black/80 checked:bg-orange-500 checked:border-orange-400 focus:ring-2 focus:ring-orange-400/60 cursor-pointer transition-all shadow-[0_0_18px_rgba(0,0,0,0.8)]"
+                    className="peer w-5 h-5 appearance-none rounded border border-white/40 bg-black/80 checked:bg-[#8B5CF6] checked:border-[#A855F7] focus:ring-2 focus:ring-[#8B5CF6]/60 cursor-pointer transition-all shadow-[0_0_18px_rgba(0,0,0,0.8)]"
                 />
                 <svg
                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3.5 h-3.5 text-black pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity"
@@ -31,7 +31,7 @@ export const LegalShield: React.FC<LegalShieldProps> = ({ isChecked, onChange })
             </div>
                 <label htmlFor="legal-check" className="text-xs text-gray-400 cursor-pointer leading-relaxed select-none">
                 Concordo que esta interface é uma ferramenta facilitadora de envio. Reconheço que a 
-                <span className="font-bold text-orange-500"> Marketelli </span> 
+                <span className="font-bold text-[#8B5CF6]"> Marketelli </span> 
                 não possui vínculo governamental e não armazena meus dados.
             </label>
         </div>

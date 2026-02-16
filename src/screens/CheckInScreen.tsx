@@ -165,7 +165,7 @@ export const CheckInScreen: React.FC = () => {
         }
 
         if (hours > 6) {
-            return 'text-orange-400';
+            return 'text-[#8B5CF6]';
         }
 
         return 'text-red-500';
@@ -173,7 +173,7 @@ export const CheckInScreen: React.FC = () => {
 
     const inputClasses =
         "w-full p-3 bg-transparent border border-white/10 rounded-xl text-white placeholder-white " +
-        "focus:ring-2 focus:ring-[#f97316]/70 focus:border-[#f97316] outline-none transition-all uppercase " +
+        "focus:ring-2 focus:ring-[#8B5CF6]/70 focus:border-[#8B5CF6] outline-none transition-all uppercase " +
         "backdrop-blur-xl shadow-[0_0_18px_rgba(0,0,0,0.8)]";
     const labelClasses =
         "block text-xs font-bold text-white uppercase mb-1 tracking-wider";
@@ -182,7 +182,7 @@ export const CheckInScreen: React.FC = () => {
         <div className="min-h-[100dvh] flex flex-col items-center px-4 py-10 bg-transparent pt-[env(safe-area-inset-top,1.5rem)] pb-[env(safe-area-inset-bottom,1.5rem)]">
             <div className="fixed top-4 left-1/2 -translate-x-1/2 z-30 w-full px-4 pointer-events-none">
                 <div className="w-full max-w-2xl mx-auto relative pointer-events-auto">
-                    <div className="flex items-center justify-between bg-black/70 border border-orange-500 rounded-full px-4 py-2 text-xs uppercase tracking-[0.2em] text-gray-300 backdrop-blur-xl shadow-[0_0_20px_rgba(0,0,0,0.8)]">
+                    <div className="flex items-center justify-between bg-black/70 border border-[#8B5CF6] rounded-full px-4 py-2 text-xs uppercase tracking-[0.2em] text-gray-300 backdrop-blur-xl shadow-[0_0_20px_rgba(0,0,0,0.8)]">
                         <span className="animate-giggle font-bold shiny-text-purple">{t.trialMode}</span>
                         <span className={`font-mono ${getTimerColorClass()}`}>{timeLeft}</span>
                     </div>
@@ -235,14 +235,34 @@ export const CheckInScreen: React.FC = () => {
             </div>
 
             <div className="w-full max-w-2xl rounded-2xl shadow-[0_0_40px_rgba(0,0,0,0.9)] p-8 border border-white/10 backdrop-blur-xl bg-black/80 relative z-10">
-                <div className="flex justify-end mb-4 text-lg gap-3">
-                    <button type="button" onClick={() => setLanguage('PT')}>🇧🇷</button>
-                    <button type="button" onClick={() => setLanguage('EN')}>🇺🇸</button>
-                    <button type="button" onClick={() => setLanguage('ES')}>🇪🇸</button>
+                <div className="flex justify-end mb-4 text-sm gap-2">
+                    <button
+                        type="button"
+                        onClick={() => setLanguage('PT')}
+                        className="px-2 py-1 rounded-full bg-white/5 text-white/80 text-xs hover:bg-white/10 border border-[#8B5CF6] flex items-center gap-1"
+                    >
+                        
+                        <span>BR</span>
+                    </button>
+                    <button
+                        type="button"
+                        onClick={() => setLanguage('EN')}
+                        className="px-2 py-1 rounded-full bg-white/5 text-white/80 text-xs hover:bg-white/10 border border-[#8B5CF6] flex items-center gap-1"
+                    >
+                        <span>EN</span>
+                    </button>
+                    <button
+                        type="button"
+                        onClick={() => setLanguage('ES')}
+                        className="px-2 py-1 rounded-full bg-white/5 text-white/80 text-xs hover:bg-white/10 border border-[#8B5CF6] flex items-center gap-1"
+                    >
+                        
+                        <span>ES</span>
+                    </button>
                 </div>
                 <div className="space-y-6 mb-8">
                     <h2 className="flex items-center gap-3 text-lg font-bold text-white/90 border-b border-white/10 pb-3">
-                        <User className="text-orange-500" size={20} />
+                        <User className="text-[#8B5CF6]" size={20} />
                         {language === 'PT' && 'Dados Pessoais'}
                         {language === 'EN' && 'Personal Data'}
                         {language === 'ES' && 'Datos Personales'}
@@ -270,7 +290,7 @@ export const CheckInScreen: React.FC = () => {
                                     }
                                     className={`px-3 py-1 rounded-full text-xs font-bold tracking-wide transition-all ${
                                         !formData.isForeigner
-                                            ? 'bg-orange-500 text-black shadow-[0_0_18px_rgba(249,115,22,0.5)]'
+                                            ? 'bg-[#8B5CF6] text-black shadow-[0_0_18px_rgba(139,92,246,0.5)]'
                                             : 'bg-white/5 text-gray-400'
                                     }`}
                                 >
@@ -283,7 +303,7 @@ export const CheckInScreen: React.FC = () => {
                                     }
                                     className={`px-3 py-1 rounded-full text-xs font-bold tracking-wide transition-all ${
                                         formData.isForeigner
-                                            ? 'bg-orange-500 text-black shadow-[0_0_18px_rgba(249,115,22,0.5)]'
+                                            ? 'bg-[#8B5CF6] text-black shadow-[0_0_18px_rgba(139,92,246,0.5)]'
                                             : 'bg-white/5 text-gray-400'
                                     }`}
                                 >
@@ -334,7 +354,7 @@ export const CheckInScreen: React.FC = () => {
                 {/* Address */}
                 <div className="space-y-6 mb-8">
                     <h2 className="flex items-center gap-3 text-lg font-bold text-white/90 border-b border-white/10 pb-3">
-                        <MapPin className="text-orange-500" size={20} />
+                        <MapPin className="text-[#8B5CF6]" size={20} />
                         {language === 'PT' && 'Endereço'}
                         {language === 'EN' && 'Address'}
                         {language === 'ES' && 'Dirección'}
@@ -394,7 +414,7 @@ export const CheckInScreen: React.FC = () => {
                 {/* Contact */}
                 <div className="space-y-6 mb-8">
                     <h2 className="flex items-center gap-3 text-lg font-bold text-white/90 border-b border-white/10 pb-3">
-                        <Phone className="text-orange-500" size={20} />
+                        <Phone className="text-[#8B5CF6]" size={20} />
                         {language === 'PT' && 'Contato & Estadia'}
                         {language === 'EN' && 'Contact & Stay'}
                         {language === 'ES' && 'Contacto & Estancia'}
@@ -440,7 +460,7 @@ export const CheckInScreen: React.FC = () => {
                  <div className="space-y-6 mb-8">
                     <div className="flex items-center justify-between border-b border-white/10 pb-3">
                         <h2 className="flex items-center gap-3 text-lg font-bold text-white/90">
-                            <Car className="text-orange-500" size={20} />
+                            <Car className="text-[#8B5CF6]" size={20} />
                             {t.hasVehicle}
                         </h2>
                         <div className="flex items-center gap-3 bg-black/60 px-3 py-1.5 rounded-lg border border-white/10 backdrop-blur-xl">
@@ -452,7 +472,7 @@ export const CheckInScreen: React.FC = () => {
                                     }
                                     className={`px-3 py-1 rounded-full text-xs font-bold tracking-wide transition-all ${
                                         !formData.hasVehicle
-                                            ? 'bg-orange-500 text-black shadow-[0_0_18px_rgba(249,115,22,0.5)]'
+                                            ? 'bg-[#8B5CF6] text-black shadow-[0_0_18px_rgba(139,92,246,0.5)]'
                                             : 'bg-white/5 text-gray-400'
                                     }`}
                                 >
@@ -465,7 +485,7 @@ export const CheckInScreen: React.FC = () => {
                                     }
                                     className={`px-3 py-1 rounded-full text-xs font-bold tracking-wide transition-all ${
                                         formData.hasVehicle
-                                            ? 'bg-orange-500 text-black shadow-[0_0_18px_rgba(249,115,22,0.5)]'
+                                            ? 'bg-[#8B5CF6] text-black shadow-[0_0_18px_rgba(139,92,246,0.5)]'
                                             : 'bg-white/5 text-gray-400'
                                     }`}
                                 >
@@ -517,7 +537,7 @@ export const CheckInScreen: React.FC = () => {
                     disabled={!isLegalChecked}
                     className={`w-full mt-8 py-4 rounded-xl font-bold text-white tracking-[0.2em] transition-all duration-300 border border-transparent
                         ${isLegalChecked 
-                            ? 'bg-orange-500 hover:bg-orange-400 shadow-[0_0_20px_rgba(249,115,22,0.3)] hover:shadow-[0_0_30px_rgba(249,115,22,0.5)] transform hover:-translate-y-0.5' 
+                            ? 'bg-[#8B5CF6] hover:bg-[#A855F7] shadow-[0_0_20px_rgba(139,92,246,0.4)] hover:shadow-[0_0_30px_rgba(139,92,246,0.7)] transform hover:-translate-y-0.5' 
                             : 'bg-white/10 text-gray-500 cursor-not-allowed border-white/5'}
                     `}
                 >
@@ -525,7 +545,7 @@ export const CheckInScreen: React.FC = () => {
                 </button>
 
                 <div className="mt-6 text-center">
-                    <Link to="/termos" className="text-xs text-orange-400/90 hover:text-orange-300 hover:underline tracking-wide transition-colors">
+                    <Link to="/termos" className="text-xs text-[#8B5CF6]/90 hover:text-[#A855F7] hover:underline tracking-wide transition-colors">
                         Ver Termos de Uso Completos
                     </Link>
                 </div>

@@ -24,5 +24,5 @@ export const DEFAULT_HOTEL: HotelConfig = {
   enableMultiLanguage: true,
   enableGarage: true,
   footerText: '© 2026 - Todos os direitos reservados',
-  backgroundUrl: 'https://wallpapers.com/images/hd/orange-and-black-background-1600-x-1200-wl7ux7tltod19s4y.jpg'
+  backgroundUrl: 'https://png.pngtree.com/thumb_back/fh260/background/20230704/pngtree-illustrated-3d-rendering-of-a-purple-and-black-geometric-background-image_3744926.jpg'
 };

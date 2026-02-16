@@ -1,21 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { HotelProvider } from './context/HotelContext';
-import CheckInScreen from './screens/CheckInScreen';
-import TermsScreen from './screens/TermsScreen';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { CheckInScreen } from './screens/CheckInScreen';
+import { TermsScreen } from './screens/TermsScreen';
 
-const App: React.FC = () => {
+function App() {
   return (
-    <HotelProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/:slug" element={<CheckInScreen />} />
-          <Route path="/termos" element={<TermsScreen />} />
-          <Route path="/" element={<Navigate to="/demo-hotel" replace />} />
-        </Routes>
-      </BrowserRouter>
-    </HotelProvider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<CheckInScreen />} />
+        <Route path="/termos" element={<TermsScreen />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;

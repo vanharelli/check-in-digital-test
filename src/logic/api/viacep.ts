@@ -21,7 +21,6 @@ export const fetchAddress = async (cep: string): Promise<AddressData | null> => 
             uf: data.uf
         };
     } catch (error) {
-        console.error('Erro ao buscar CEP:', error);
         return null;
     }
 };

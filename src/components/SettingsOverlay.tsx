@@ -83,7 +83,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 <input 
                   type="password" 
                   value={pin}
-                  onChange={(e) => setPin(e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPin(e.target.value)}
                   placeholder={t.adminPinPlaceholder}
                   className="w-full bg-black border border-white/20 rounded p-4 text-center text-2xl text-white tracking-[0.5em] focus:border-[var(--primary-accent)] outline-none transition-all"
                   autoFocus
@@ -188,7 +188,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                     name="footerText"
                     value={formData.footerText || ''}
                     onChange={handleChange}
-                    placeholder="© 2026 Alpha Plaza Hotel..."
+                    placeholder="© 2026 - Todos os direitos reservados"
                     className="w-full bg-black border border-white/20 rounded p-3 text-white focus:border-[var(--primary-accent)] outline-none h-20 resize-none"
                   />
                 </div>

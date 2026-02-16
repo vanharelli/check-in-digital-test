@@ -1,6 +1,6 @@
 export const generateWhatsAppPayload = (formData: any) => {
     const lines = [
-        `*FICHA DE CHECK-IN DIGITAL - ALPHA PLAZA*`,
+        `*FICHA DE CHECK-IN DIGITAL*`,
         ``,
         `*TITULAR:* ${formData.fullName.toUpperCase()}`,
     ];

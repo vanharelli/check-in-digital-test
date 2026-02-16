@@ -15,14 +15,14 @@ export interface HotelConfig {
 }
 
 export const DEFAULT_HOTEL: HotelConfig = {
-  id: 'alpha-plaza',
-  name: 'Ficha Cadastral',
-  subtitle: 'Alpha Plaza Hotel',
+  id: 'demonstração-hotel',
+  name: 'CHECK-IN DIGITAL',
+  subtitle: 'checkin digital demonstração',
   whatsapp: '5561982062229',
   themeColor: '#D4AF37', // Gold (Standard)
   primaryColor: '#D4AF37', // Gold (Standard)
   enableMultiLanguage: true,
   enableGarage: true,
-  footerText: '© 2026 Alpha Plaza Hotel - Todos os direitos reservados',
-  backgroundUrl: 'https://static.vecteezy.com/ti/vetor-gratis/t2/8953048-abstract-elegant-gold-lines-diagonal-scene-on-black-background-template-premium-award-design-gratis-vetor.jpg'
+  footerText: '© 2026 - Todos os direitos reservados',
+  backgroundUrl: 'https://wallpapers.com/images/hd/orange-and-black-background-1600-x-1200-wl7ux7tltod19s4y.jpg'
 };

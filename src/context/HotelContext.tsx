@@ -31,9 +31,7 @@ const saveHotelToDB = async (config: HotelConfig) => {
     const hotels = db ? JSON.parse(db) : {};
     hotels[config.id] = config;
     localStorage.setItem('hotels_db', JSON.stringify(hotels));
-  } catch (e) {
-    console.warn('LocalStorage save failed:', e);
-  }
+  } catch (e) {}
 };
 
 export const HotelProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -92,8 +90,6 @@ export const HotelProvider: React.FC<{ children: React.ReactNode }> = ({ childre
           saveHotelToDB(newHotel);
         }
       } catch (error) {
-        console.error("Failed to load hotel config", error);
-        // Fallback to default in worst case to avoid infinite loading
         setCurrentHotel(DEFAULT_HOTEL);
       } finally {
         setIsLoading(false);

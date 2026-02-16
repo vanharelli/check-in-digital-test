@@ -11,13 +11,13 @@ export interface HotelConfig {
 }
 
 export const DEFAULT_HOTEL: HotelConfig = {
-    id: 'alpha-plaza',
-    name: 'Ficha Cadastral',
-    subtitle: 'Alpha Plaza Hotel',
+    id: 'demonstração-hotel',
+    name: 'CHECK-IN DIGITAL',
+    subtitle: 'checkin digital demonstração',
     whatsapp: '5561982062229',
     themeColor: '#D4AF37', // Gold
     primaryColor: '#000000', // Black
     enableMultiLanguage: true,
     enableGarage: true,
-    footerText: '© 2026 Alpha Plaza Hotel - Todos os direitos reservados'
+    footerText: '© Marketelli Software Solutions e tecnologia - 2026 - Todos os direitos reservados'
 };

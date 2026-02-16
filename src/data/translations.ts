@@ -3,7 +3,7 @@ export type Language = 'PT' | 'EN' | 'ES';
 export const translations = {
   PT: {
     title: "Protocolo de Identificação Digital",
-    subtitle: "Alpha Plaza Hotel",
+    subtitle: "Seu Hotel",
     fullName: "Nome Completo do Titular",
     fullNamePlaceholder: "DIGITE SEU NOME",
     isForeigner: "É ESTRANGEIRO?",
@@ -58,7 +58,7 @@ export const translations = {
     errorPhone: "Telefone é obrigatório",
     
     // WhatsApp Message
-    waTitle: "NOVO PROTOCOLO DIGITAL - ALPHA PLAZA",
+    waTitle: "NOVO PROTOCOLO DIGITAL",
     waName: "TITULAR",
     waForeigner: "ESTRANGEIRO",
     waCountry: "PAÍS",
@@ -95,7 +95,7 @@ export const translations = {
   },
   EN: {
     title: "Digital Identification Protocol",
-    subtitle: "Alpha Plaza Hotel",
+    subtitle: "Your Hotel",
     fullName: "Full Name of Holder",
     fullNamePlaceholder: "ENTER YOUR NAME",
     isForeigner: "ARE YOU A FOREIGNER?",
@@ -150,7 +150,7 @@ export const translations = {
     errorPhone: "Phone is required",
 
     // WhatsApp Message
-    waTitle: "NEW DIGITAL PROTOCOL - ALPHA PLAZA",
+    waTitle: "NEW DIGITAL PROTOCOL",
     waName: "HOLDER",
     waForeigner: "FOREIGNER",
     waCountry: "COUNTRY",
@@ -187,7 +187,7 @@ export const translations = {
   },
   ES: {
     title: "Protocolo de Identificación Digital",
-    subtitle: "Alpha Plaza Hotel",
+    subtitle: "Su Hotel",
     fullName: "Nombre Completo del Titular",
     fullNamePlaceholder: "INGRESE SU NOMBRE",
     isForeigner: "¿ERES EXTRANJERO?",
@@ -242,7 +242,7 @@ export const translations = {
     errorPhone: "Teléfono es obligatorio",
 
     // WhatsApp Message
-    waTitle: "NUEVO PROTOCOLO DIGITAL - ALPHA PLAZA",
+    waTitle: "NUEVO PROTOCOLO DIGITAL",
     waName: "TITULAR",
     waForeigner: "EXTRANJERO",
     waCountry: "PAÍS",

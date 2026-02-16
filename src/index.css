@@ -11,7 +11,11 @@
 
 body {
   background-color: var(--background-dark);
-  background-image: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #000000 100%);
+  background-image: url('https://wallpapers.com/images/hd/orange-and-black-background-1600-x-1200-wl7ux7tltod19s4y.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--text-light);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -34,4 +38,38 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #D4AF37;
+}
+
+@keyframes giggle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-1px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(1px) rotate(1deg);
+  }
+}
+
+.animate-giggle {
+  animation: giggle 0.8s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes shiny-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.shiny-text-purple {
+  background: linear-gradient(90deg, #4c1d95, #8b5cf6, #9ca3af, #000000);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shiny-text 3s linear infinite;
 }

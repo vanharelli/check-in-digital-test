@@ -2,7 +2,7 @@ export type Language = 'PT' | 'EN' | 'ES';
 
 export const translations = {
   PT: {
-    title: "Protocolo de Identificação Digital",
+    title: "CHECK-IN DIGITAL - AGÊNCIA MARKTELLI",
     subtitle: "Seu Hotel",
     fullName: "Nome Completo do Titular",
     fullNamePlaceholder: "DIGITE SEU NOME",
@@ -58,7 +58,7 @@ export const translations = {
     errorPhone: "Telefone é obrigatório",
     
     // WhatsApp Message
-    waTitle: "NOVO PROTOCOLO DIGITAL",
+    waTitle: "CHECK-IN DIGITAL - AGÊNCIA MARKTELLI",
     waName: "TITULAR",
     waForeigner: "ESTRANGEIRO",
     waCountry: "PAÍS",
@@ -112,7 +112,7 @@ export const translations = {
     addressPlaceholder: "ENTER YOUR ADDRESS",
     number: "Number",
     numberPlaceholder: "No.",
-    zipCode: "Residence Location / Origin",
+    zipCode: "Location",
     city: "City",
     cityPlaceholder: "CITY",
     state: "State",
@@ -186,7 +186,7 @@ export const translations = {
     footerStateless: "EXCLUSIVE TOOL FOR HOTEL CHECK-IN MANAGEMENT\n\nStateless & Zero-Knowledge Technology. The responsibility for FNRH submission (Law 11.771/2008) lies administratively and solely with the Establishment.\n\nPOWERED BY MARKETELLI INTELLIGENCE"
   },
   ES: {
-    title: "Protocolo de Identificación Digital",
+    title: "CHECK-IN DIGITAL - AGÊNCIA MARKTELLI",
     subtitle: "Su Hotel",
     fullName: "Nombre Completo del Titular",
     fullNamePlaceholder: "INGRESE SU NOMBRE",
@@ -204,7 +204,7 @@ export const translations = {
     addressPlaceholder: "INGRESE SU DIRECCIÓN",
     number: "Número",
     numberPlaceholder: "Nº",
-    zipCode: "Ubicación de Residencia / Origen",
+    zipCode: "Residencia",
     city: "Ciudad",
     cityPlaceholder: "CIUDAD",
     state: "Estado/Provincia",
@@ -242,7 +242,7 @@ export const translations = {
     errorPhone: "Teléfono es obligatorio",
 
     // WhatsApp Message
-    waTitle: "NUEVO PROTOCOLO DIGITAL",
+    waTitle: "CHECK-IN DIGITAL - AGÊNCIA MARKTELLI",
     waName: "TITULAR",
     waForeigner: "EXTRANJERO",
     waCountry: "PAÍS",

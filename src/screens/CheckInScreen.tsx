@@ -254,7 +254,7 @@ export const CheckInScreen: React.FC = () => {
                             name="fullName"
                             value={formData.fullName}
                             onChange={handleChange}
-                            placeholder="DIGITE SEU NOME"
+                            placeholder={t.fullNamePlaceholder}
                             className={inputClasses}
                         />
                     </div>
@@ -373,7 +373,7 @@ export const CheckInScreen: React.FC = () => {
                                 name="address"
                                 value={formData.address}
                                 onChange={handleChange}
-                                placeholder="RUA / AVENIDA"
+                                placeholder={t.addressPlaceholder}
                                 className={inputClasses}
                             />
                         </div>
